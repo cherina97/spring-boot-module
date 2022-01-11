@@ -1,4 +1,4 @@
-package com.epam.springbootmodule.exception;
+package com.epam.springbootmodule.task2.exception;
 
 public class GlobalApplicationException extends RuntimeException {
 

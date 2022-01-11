@@ -1,13 +1,12 @@
-package com.epam.springbootmodule;
+package com.epam.springbootmodule.task1;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBootModuleApplication {
+public class App {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootModuleApplication.class, args);
+        SpringApplication.run(App.class, args);
     }
-
 }

@@ -1,4 +1,4 @@
-package com.epam.springbootmodule.dto;
+package com.epam.springbootmodule.task2.dto;
 
 import lombok.Data;
 

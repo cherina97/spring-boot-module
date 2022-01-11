@@ -1,4 +1,4 @@
-package com.epam.springbootmodule.model;
+package com.epam.springbootmodule.task2.model;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

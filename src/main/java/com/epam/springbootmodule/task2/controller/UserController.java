@@ -1,8 +1,8 @@
-package com.epam.springbootmodule.controller;
+package com.epam.springbootmodule.task2.controller;
 
-import com.epam.springbootmodule.dto.UserDto;
-import com.epam.springbootmodule.model.User;
-import com.epam.springbootmodule.service.UserService;
+import com.epam.springbootmodule.task2.dto.UserDto;
+import com.epam.springbootmodule.task2.model.User;
+import com.epam.springbootmodule.task2.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

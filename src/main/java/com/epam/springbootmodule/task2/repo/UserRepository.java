@@ -1,6 +1,6 @@
-package com.epam.springbootmodule.repo;
+package com.epam.springbootmodule.task2.repo;
 
-import com.epam.springbootmodule.model.User;
+import com.epam.springbootmodule.task2.model.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
