@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="en">
+<head>
+    <title>Index page</title>
+</head>
+<body>
+
+<div>
+    <!-- this is header -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a th:href="@{/}">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h2> Go to <a th:href="@{/admin}"> ADMIN PAGE (need admin role)</a></h2>
+        <h2> Go to <a th:href="@{/user}"> USER PAGE (need user role)</a></h2>
+        <h2> Go to <a th:href="@{/about}"> OPEN PAGE (open for everyone)</a></h2>
+    </div>
+
+</div>
+
+<div class="container">
+    <!-- this is footer -->
+    <footer>
+        <a th:href="@{/logout}">Sign Out</a>
+    </footer>
+</div>
+
+</body>
+</html>

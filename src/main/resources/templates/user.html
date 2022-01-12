@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>User page</title>
+</head>
+<body>
+
+<div>
+    <!-- this is header -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a th:href="@{/}">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>User page (Spring Security protected)</h1>
+        <h1 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h1>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+    </div>
+
+</div>
+
+<div class="container">
+    <!-- this is footer -->
+    <footer>
+        <a th:href="@{/logout}">Sign Out</a>
+    </footer>
+</div>
+
+</body>
+</html>
