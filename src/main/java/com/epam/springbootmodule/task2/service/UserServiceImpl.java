@@ -43,12 +43,14 @@ public class UserServiceImpl implements UserService {
     public User createUser(User user) {
         log.info("creating user:  " + user);
 
-        if (userRepository.findByEmail(user.getEmail()).isPresent()) {
-            log.error("Email is not unique");
+        if (userIsNotUnique(user)) {
             throw new GlobalApplicationException("User with such email is already present");
         }
-
         return userRepository.save(user);
+    }
+
+    private boolean userIsNotUnique(User user) {
+        return userRepository.findByEmail(user.getEmail()).isPresent();
     }
 
     @Transactional
@@ -56,19 +58,14 @@ public class UserServiceImpl implements UserService {
     public User updateUser(User user) {
         log.info("updating user " + user);
 
-        if (userRepository.findByEmail(user.getEmail()).isPresent()) {
-            log.error("Email is not unique");
+        User userById = getUserById(user.getId());
+
+        if (userIsNotUnique(user) && !userById.getEmail().equals(user.getEmail())) {
             throw new GlobalApplicationException("User with such email is already present");
         }
-
-        userRepository.findById(user.getId())
-                .ifPresent(userById -> {
-                            userById.setEmail(user.getEmail());
-                            userById.setName(user.getName());
-                        }
-                );
-
-        return user;
+        return userById
+                .setEmail(user.getEmail())
+                .setName(user.getName());
     }
 
     @Override
