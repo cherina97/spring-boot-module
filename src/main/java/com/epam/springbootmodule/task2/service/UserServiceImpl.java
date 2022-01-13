@@ -6,12 +6,14 @@ import com.epam.springbootmodule.task2.model.User;
 import com.epam.springbootmodule.task2.repo.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
+@Profile("task2")
 @Slf4j
 @Service
 public class UserServiceImpl implements UserService {

@@ -2,8 +2,10 @@ package com.epam.springbootmodule.task3;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Profile;
 
-//@SpringBootApplication
+@Profile("task3")
+@SpringBootApplication
 public class SpringSecurityApp {
 
     public static void main(String[] args) {

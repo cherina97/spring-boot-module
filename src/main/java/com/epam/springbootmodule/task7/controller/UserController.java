@@ -4,12 +4,14 @@ import com.epam.springbootmodule.task7.dto.UserDto;
 import com.epam.springbootmodule.task7.model.User;
 import com.epam.springbootmodule.task7.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Profile("task7_test")
 @RestController
 @RequestMapping("/users")
 public class UserController {
