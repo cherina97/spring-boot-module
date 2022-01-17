@@ -1,15 +1,15 @@
-package com.epam.springbootmodule.task2;
+package com.epam.springbootmodule.task5;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Profile;
 
-@Profile("task2")
+@Profile("task5")
 @SpringBootApplication
-public class SpringBootModuleApplication {
+public class SpringBootModuleApplicationTask5 {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootModuleApplication.class, args);
+        SpringApplication.run(SpringBootModuleApplicationTask5.class, args);
     }
 
 }

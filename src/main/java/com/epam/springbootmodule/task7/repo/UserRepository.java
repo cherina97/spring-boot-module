@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
-@Profile("task7_test")
+@Profile("test")
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
 

@@ -13,7 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-@Profile("task7_test")
+@Profile("test")
 @Slf4j
 @Service
 public class UserServiceImpl implements UserService {

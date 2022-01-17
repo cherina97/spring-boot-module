@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Profile("task7_test")
+@Profile("test")
 @RestController
 @RequestMapping("/users")
 public class UserController {
