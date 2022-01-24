@@ -12,7 +12,7 @@ import java.util.Objects;
 @Accessors(chain = true)
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+@Entity(name = "User5")
 @Table(name = "users")
 public class User {
 

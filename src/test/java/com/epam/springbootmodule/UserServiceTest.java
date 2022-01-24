@@ -1,4 +1,4 @@
-package com.epam.springbootmodule.task7;
+package com.epam.springbootmodule;
 
 import com.epam.springbootmodule.task7.model.User;
 import com.epam.springbootmodule.task7.repo.UserRepository;
@@ -8,6 +8,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.context.annotation.Profile;
 
 import java.util.Arrays;
 import java.util.List;
@@ -18,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
+@Profile("test")
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTest {
 

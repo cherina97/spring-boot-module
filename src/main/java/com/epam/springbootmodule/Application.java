@@ -1,14 +1,12 @@
-package com.epam.springbootmodule.task1;
+package com.epam.springbootmodule;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Profile;
 
-@Profile("task1")
 @SpringBootApplication
-public class App {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
