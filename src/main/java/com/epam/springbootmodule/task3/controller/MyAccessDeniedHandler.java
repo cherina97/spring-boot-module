@@ -1,7 +1,6 @@
 package com.epam.springbootmodule.task3.controller;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.annotation.Profile;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -13,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Profile("task3")
 @Slf4j
 @Component
 public class MyAccessDeniedHandler implements AccessDeniedHandler {
