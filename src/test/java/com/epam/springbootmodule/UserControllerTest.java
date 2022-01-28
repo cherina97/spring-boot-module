@@ -1,8 +1,8 @@
 package com.epam.springbootmodule;
 
-import com.epam.springbootmodule.task7.controller.UserController;
-import com.epam.springbootmodule.task7.model.User;
-import com.epam.springbootmodule.task7.service.UserService;
+import com.epam.springbootmodule.task2.controller.UserController;
+import com.epam.springbootmodule.task2.model.User;
+import com.epam.springbootmodule.task2.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

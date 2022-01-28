@@ -10,7 +10,7 @@ for task 3:
 spring.profiles.active=task3
 
 for task 5:
-spring.profiles.active=task5 spring.flyway.enabled=true spring.flyway.baseline-on-migrate=true
+spring.flyway.enabled=true spring.flyway.baseline-on-migrate=true
 
 for task 7:
 spring.profiles.active=test

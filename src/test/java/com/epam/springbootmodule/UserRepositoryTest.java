@@ -1,7 +1,7 @@
 package com.epam.springbootmodule;
 
-import com.epam.springbootmodule.task7.model.User;
-import com.epam.springbootmodule.task7.repo.UserRepository;
+import com.epam.springbootmodule.task2.model.User;
+import com.epam.springbootmodule.task2.repo.UserRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
