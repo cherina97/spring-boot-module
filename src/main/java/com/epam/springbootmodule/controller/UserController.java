@@ -1,17 +1,15 @@
-package com.epam.springbootmodule.task2.controller;
+package com.epam.springbootmodule.controller;
 
-import com.epam.springbootmodule.task2.dto.UserDto;
-import com.epam.springbootmodule.task2.model.User;
-import com.epam.springbootmodule.task2.service.UserService;
+import com.epam.springbootmodule.dto.UserDto;
+import com.epam.springbootmodule.model.User;
+import com.epam.springbootmodule.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Profile("task2")
 @RestController
 @RequestMapping("/users")
 public class UserController {

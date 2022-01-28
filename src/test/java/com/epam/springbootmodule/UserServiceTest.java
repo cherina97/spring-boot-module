@@ -1,8 +1,8 @@
 package com.epam.springbootmodule;
 
-import com.epam.springbootmodule.task2.model.User;
-import com.epam.springbootmodule.task2.repo.UserRepository;
-import com.epam.springbootmodule.task2.service.UserServiceImpl;
+import com.epam.springbootmodule.model.User;
+import com.epam.springbootmodule.repo.UserRepository;
+import com.epam.springbootmodule.service.UserServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -19,7 +19,6 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-@Profile("test")
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTest {
 

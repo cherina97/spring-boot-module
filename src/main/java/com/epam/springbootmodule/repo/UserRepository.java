@@ -1,13 +1,11 @@
-package com.epam.springbootmodule.task2.repo;
+package com.epam.springbootmodule.repo;
 
-import com.epam.springbootmodule.task2.model.User;
-import org.springframework.context.annotation.Profile;
+import com.epam.springbootmodule.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
 
-@Profile("task2")
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
 

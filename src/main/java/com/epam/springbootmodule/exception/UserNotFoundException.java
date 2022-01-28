@@ -1,4 +1,4 @@
-package com.epam.springbootmodule.task2.exception;
+package com.epam.springbootmodule.exception;
 
 public class UserNotFoundException extends RuntimeException {
 

@@ -1,6 +1,6 @@
-package com.epam.springbootmodule.task2.service;
+package com.epam.springbootmodule.service;
 
-import com.epam.springbootmodule.task2.model.User;
+import com.epam.springbootmodule.model.User;
 
 import java.util.List;
 

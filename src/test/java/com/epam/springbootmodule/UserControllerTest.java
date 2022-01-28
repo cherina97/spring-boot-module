@@ -1,8 +1,8 @@
 package com.epam.springbootmodule;
 
-import com.epam.springbootmodule.task2.controller.UserController;
-import com.epam.springbootmodule.task2.model.User;
-import com.epam.springbootmodule.task2.service.UserService;
+import com.epam.springbootmodule.controller.UserController;
+import com.epam.springbootmodule.model.User;
+import com.epam.springbootmodule.service.UserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +16,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-@Profile("test")
 @WebMvcTest(controllers = UserController.class)
 @AutoConfigureMockMvc(addFilters = false)
 public class UserControllerTest {

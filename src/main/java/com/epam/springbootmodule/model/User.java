@@ -1,4 +1,4 @@
-package com.epam.springbootmodule.task2.model;
+package com.epam.springbootmodule.model;
 
 import lombok.*;
 import lombok.experimental.Accessors;

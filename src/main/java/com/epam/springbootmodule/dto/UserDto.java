@@ -1,4 +1,4 @@
-package com.epam.springbootmodule.task2.dto;
+package com.epam.springbootmodule.dto;
 
 import lombok.Data;
 
@@ -7,5 +7,4 @@ public class UserDto {
 
     private String name;
     private String email;
-    
 }

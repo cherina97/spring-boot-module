@@ -1,19 +1,17 @@
-package com.epam.springbootmodule.task2.service;
+package com.epam.springbootmodule.service;
 
-import com.epam.springbootmodule.task2.exception.GlobalApplicationException;
-import com.epam.springbootmodule.task2.exception.UserNotFoundException;
-import com.epam.springbootmodule.task2.model.User;
-import com.epam.springbootmodule.task2.repo.UserRepository;
+import com.epam.springbootmodule.exception.GlobalApplicationException;
+import com.epam.springbootmodule.exception.UserNotFoundException;
+import com.epam.springbootmodule.model.User;
+import com.epam.springbootmodule.repo.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
-@Profile("task2")
 @Slf4j
 @Service
 public class UserServiceImpl implements UserService {
